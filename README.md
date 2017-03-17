@@ -1,3 +1,3 @@
 # COMP10050
 SE project 2
-Yeah
+This is Daire's half of the project.
