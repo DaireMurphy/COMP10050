@@ -143,14 +143,14 @@ int main(void)
 			human(i);
 		}
 	}
-	for (i = 0; i < n; i++)//For loop to ask each player what chacacter they would like to play as and storing them in a struct
+	for (i = 0; i < n; i++)//For loop to ask each player whether they would like to attack or move
 	{	printf("\n%s, would you like to move or attack a player? (Please enter either 'Attack' or 'Move'.)\n", info[i].names);
 	scanf("%s", &info[i].moveattack);
 		if(strcmp(info[i].moveattack, "Attack") != 0 && strcmp(info[i].moveattack, "Move") != 0){
 			printf("\nIncorrect entry. Try again.\n");
 			i--;
 		}
-			if(strcmp(info[i].moveattack, "Attack") == 0){//Checking what chacacter they picked and running the appropriate function
+			if(strcmp(info[i].moveattack, "Attack") == 0){//Checking what action they picked and running the appropriate function
 			attack(i);
 		}
 			if(strcmp(info[i].moveattack, "Move") == 0){
